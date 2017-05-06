@@ -1,9 +1,9 @@
-setwd("~/Box Sync/Capital One Data Science Challenge")
+setwd("~/ML Final Project")
 library(dplyr)
 library(plyr)
 library(ggplot2)
 ####################################################################
-########## Question 4: Predictive model  ##########################
+###################  Predictive model  #############################
 ####################################################################
 # Overview 
 # 1. The Tip percentage variable is created 
