@@ -20,7 +20,31 @@ library(ggplot2)
 #   4b) Model tunning(finding the best parameters for the model in a given space)
 #   4c) testing the model in the testing set 
 
-Taxi.data.raw <-  read.csv("green_tripdata_2015-09.csv")
+# Read in all 12 months data
+taxi1 = read.csv("green_tripdata_2015-01.csv")
+taxi2 = read.csv("green_tripdata_2015-02.csv")
+taxi3 = read.csv("green_tripdata_2015-03.csv")
+taxi4 = read.csv("green_tripdata_2015-04.csv")
+taxi5 = read.csv("green_tripdata_2015-05.csv")
+taxi6 = read.csv("green_tripdata_2015-06.csv")
+taxi7 = read.csv("green_tripdata_2015-07.csv")
+taxi8 = read.csv("green_tripdata_2015-08.csv")
+taxi9 = read.csv("green_tripdata_2015-09.csv")
+taxi10 = read.csv("green_tripdata_2015-10.csv")
+taxi11 = read.csv("green_tripdata_2015-11.csv")
+
+Taxi.data.raw = rbind(taxi1,taxi2,taxi3,taxi4,taxi5,taxi6,taxi7,taxi8,taxi9,taxi10,taxi11,taxi12)
+
+Taxi.data.raw$lpep_pickup_datetime <- as.POSIXct(Taxi.data.raw$lpep_pickup_datetime,format='%Y-%m-%d %H:%M:%S')
+Taxi.data.raw$Lpep_dropoff_datetime <- as.POSIXct(Taxi.data.raw$Lpep_dropoff_datetime,format='%Y-%m-%d %H:%M:%S')
+
+## Calculate the duration and avg speed variables
+Taxi.data.raw$duration <- floor(as.double(Taxi.data.raw$Lpep_dropoff_datetime-Taxi.data.raw$lpep_pickup_datetime)/60.0)
+#Taxi.data.raw$percent  <- Taxi.data.raw$Tip_amount/Taxi.data.raw$Fare_amount * 100.0
+Taxi.data.raw$speed    <- Taxi.data.raw$Trip_distance/Taxi.data.raw$duration *60
+
+
+#Taxi.data.raw <-  read.csv("green_tripdata_2015-09.csv")
 Taxi.data.raw <- Taxi.data.raw[!Taxi.data.raw$Total_amount<=0,]
 sum(Taxi.data.raw[Taxi.data.raw$Payment_type==2, "Tip_amount"]) #Only 2 cash transactions that occur that have a tip indicated. 
 Taxi.data.raw <- Taxi.data.raw[!Taxi.data.raw$Fare_amount==0, ] 
