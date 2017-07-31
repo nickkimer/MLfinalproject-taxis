@@ -56,7 +56,7 @@ Linear Model yields these coefficients
 
 Gradient Boosted Trees yield these variable importance measures:
 
-          Variable      Scaled Importance  Percentage
+          Variable      Scaled Importance      Percentage
       Dropoff Hour         1.000000             0.293675
       Pickup_hour          0.817080             0.239956
       Day of Week          0.520587             0.152884
