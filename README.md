@@ -47,6 +47,7 @@ Mean_leaves: 81.84
 ## Conclusions
 Linear Model yields these coefficients
 Variable Importances:
+
           Variable                    coefficients 
           
         Total_amount                    0.005347
