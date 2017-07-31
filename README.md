@@ -26,7 +26,18 @@ There is an interesting question (several questions actually...) to be asked in 
 ## Quick Methods
 1. Linear Regression as a baseline
 2. Gradient Boosted Trees 
-* Optimized / Tuned using Grid Search 
-* Models scored after every 10 trees
-* Stopped once the MSE value was optimized
-* Optimized parameters include number of trees, max leaves, etc.
+  * Optimized / Tuned using Grid Search 
+  * Models scored after every 10 trees
+  * Stopped once the MSE value was optimized
+  * Optimized parameters include number of trees, max leaves, etc.
+
+**Final Model Parameters **
+  Number_of_trees: 114 
+  Number_of_internal_trees: 114
+  Min_depth: 4
+  Learning Rate: .05
+  Max_depth: 9
+  Mean_depth: 8.86
+  Min_leaves: 7
+  Max_leaves:189
+  Mean_leaves: 81.84
