@@ -46,7 +46,6 @@ Mean_leaves: 81.84
 
 ## Conclusions
 Linear Model yields these coefficients
-Variable Importances:
 
           Variable                    coefficients 
           
@@ -59,6 +58,17 @@ Variable Importances:
         Fare_amount                     0.003736
         
         VendorID.1                      0.003685
+
+Gradient Boosted Trees yield these variable importance measure:
+
+Variable Importances:
+
+          Variable      Scaled Importance  Percentage
+      Dropoff Hour         1.000000             0.293675
+      Pickup_hour          0.817080             0.239956
+      Day of Week          0.520587             0.152884
+      Trip Distance        0.361957             0.106298
+      Fare Amount          0.346927             0.101884
 
 ## Further Investigative Methods
 
