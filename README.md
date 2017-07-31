@@ -10,10 +10,10 @@ There is an interesting question (several questions actually...) to be asked in 
 
 ## Data Set
 
-NYC taxi & Limousine Commision 
-Training set : 3,884,620
-Testing set : 863,248
-Dataset contains twenty-one variables such as time of transaction, pickup/dropoff date and time, transaction amount, etc.
+* NYC taxi & Limousine Commision 
+* Training set : 3,884,620
+* Testing set : 863,248
+* Dataset contains twenty-one variables such as time of transaction, pickup/dropoff date and time, transaction amount, etc.
 
 **Feature  Engineering**
 * Day of the week  
@@ -24,4 +24,9 @@ Dataset contains twenty-one variables such as time of transaction, pickup/dropof
 * Part of day (early morning, morning, etc.) 
 
 ## Quick Methods
-
+1. Linear Regression as a baseline
+2. Gradient Boosted Trees 
+* Optimized / Tuned using Grid Search 
+* Models scored after every 10 trees
+* Stopped once the MSE value was optimized
+* Optimized parameters include number of trees, max leaves, etc.
