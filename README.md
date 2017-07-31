@@ -16,12 +16,12 @@ Testing set : 863,248
 Dataset contains twenty-one variables such as time of transaction, pickup/dropoff date and time, transaction amount, etc.
 
 **Feature  Engineering**
-*Day of the week  
-*Hour of pick up 
-*Hour of drop off
-*Duration of the trip (in minutes) 
-*Speed 
-*Part of day (early morning, morning, etc.) 
+* Day of the week  
+* Hour of pick up 
+* Hour of drop off
+* Duration of the trip (in minutes) 
+* Speed 
+* Part of day (early morning, morning, etc.) 
 
 ## Quick Methods
 
