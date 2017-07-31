@@ -48,20 +48,13 @@ Mean_leaves: 81.84
 Linear Model yields these coefficients
 
           Variable                    coefficients 
-          
         Total_amount                    0.005347
-        
         Lpep_pickup_hour                0.004464
-        
         Lpep_dropoff_time               0.003918
-        
         Fare_amount                     0.003736
-        
         VendorID.1                      0.003685
 
-Gradient Boosted Trees yield these variable importance measure:
-
-Variable Importances:
+Gradient Boosted Trees yield these variable importance measures:
 
           Variable      Scaled Importance  Percentage
       Dropoff Hour         1.000000             0.293675
