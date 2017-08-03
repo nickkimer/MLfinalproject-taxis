@@ -1,6 +1,6 @@
 # MLfinalproject-taxis
 
-This is a very quick exploration of the publicly available NYC data set and contains a very quick regression analysis using two methods. Computation was done utilizing AWS EC2 instances in R.
+This is a very quick exploration of the publicly available NYC data set and contains a very quick regression analysis using two methods. Optimization of the GBM hyperparameters is done through grid search. Computation was done utilizing AWS EC2 instances in R.
 
 ## Motivation
 
